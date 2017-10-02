@@ -6,6 +6,8 @@ import { MyApp } from './app.component';
 import { DosageProvider } from '../providers/dosage/dosage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CodePush } from '@ionic-native/code-push';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    CodePush,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DosageProvider
   ]

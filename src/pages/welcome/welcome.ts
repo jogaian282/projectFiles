@@ -1,5 +1,5 @@
 ﻿import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,PopoverController} from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,12 +9,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 export class WelcomePage   {
 
-	constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+	constructor(public navCtrl: NavController, public navParams: NavParams,public popoverCtrl: PopoverController) {
 	}
 
 	ionViewDidLoad() {
 		console.log('ionViewDidLoad WelcomePage');
+	}
+
+	public presentPopover(event: Event) {
+		let popover = this.popoverCtrl.create('SettingsPage');
+		popover.present({ ev: event });
 	}
 
 	goToOtherPage() {

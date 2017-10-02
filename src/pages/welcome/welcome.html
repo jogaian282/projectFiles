@@ -5,8 +5,15 @@
                 <ion-col col-6>
                     <img src="assets/images/logo.png" width="99%" alt="app_logo"/>
                 </ion-col>
-                <ion-col col-6 text-right>
-                    <span ion-text color="primary" [ngStyle]="{'display': 'inline-block', 'margin-top': '5px'}"><b>For Adults (2017)</b></span>
+                <ion-col col-4>
+                    <span ion-text color="dark" [ngStyle]="{'display': 'inline-block','margin-top':'-3px'}"><b>For Adults (2017)</b></span>
+                </ion-col>
+                <ion-col col-2>
+                    <ion-buttons end>
+                        <button ion-button icon-only (click)="presentPopover($event)">
+                            <ion-icon name="more"></ion-icon>
+                        </button>
+                    </ion-buttons>
                 </ion-col>
             </ion-row>
         </ion-grid>
@@ -35,7 +42,7 @@
             Dosages
         </ion-item>
         <ion-item (click)="note()" tappable>
-            Note
+            Notes
         </ion-item>
         <ion-item (click)="disclaimer()" tappable>
             Disclaimer

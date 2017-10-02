@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <platform name="android">
+        <preference name="CodePushDeploymentKey" value="tIt6RBXs6N32jPURQFaUg-zI9kqOb2f1aa41-5134-4581-8d6d-3130116f1405" />
+    </platform>
     <name>AB POLICY</name>
     <description>SKS Hospital India Pvt.Ltd</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -80,6 +83,7 @@
     </platform>
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
+    <plugin name="cordova-plugin-code-push" spec="^1.9.8-beta" />
     <plugin name="cordova-plugin-console" spec="^1.0.5" />
     <plugin name="cordova-plugin-device" spec="^1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
