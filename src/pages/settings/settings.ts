@@ -24,9 +24,7 @@ export class SettingsPage   {
     public chkUpdate(val){
         this.platform.ready().then(
             () =>{
-                this.codePush.sync({}, (progress) => {
-
-                }).subscribe((status) => {
+                this.codePush.sync().subscribe((status) => {
                     if(status == SyncStatus.CHECKING_FOR_UPDATE)
                         alert("Checking for update");
                     if(status == SyncStatus.DOWNLOADING_PACKAGE)
@@ -51,10 +49,11 @@ export class SettingsPage   {
     // Method to check about
     public about(val){
         const alert = this.alertCtrl.create({
-            title: 'About',
+            title: 'About Antibioic Policy',
             message: `
-                Sks Antibiotic Policy (2017)<br>
-                v1.0
+                <div> Version v0.0.1 </div><br>
+                <div> Developed by </div><br>
+                <span><strong> Raster Images Pvt Ltd </strong></span>
             `,
             buttons: ['Close']
           });
