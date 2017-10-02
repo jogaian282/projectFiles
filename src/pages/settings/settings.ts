@@ -21,7 +21,7 @@ export class SettingsPage   {
     }
     
     // Method to check update
-    public chkUpdate(){
+    public chkUpdate(val){
         this.platform.ready().then(
             () =>{
                 this.codePush.sync({}, (progress) => {
@@ -42,6 +42,8 @@ export class SettingsPage   {
                     if(status == SyncStatus.ERROR)
                         alert("Error Occurred While Downloading");
                 })
+                this.selectedTitle = val.target.textContent;
+                this.viewCtrl.dismiss(this.selectedTitle);
             }
         )
     }

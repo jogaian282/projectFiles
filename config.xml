@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <platform name="android">
-        <preference name="CodePushDeploymentKey" value="tIt6RBXs6N32jPURQFaUg-zI9kqOb2f1aa41-5134-4581-8d6d-3130116f1405" />
+        <preference name="CodePushDeploymentKey" value="Jr2tmDGzEXMpeEGvYaenqX-UBZN8b2f1aa41-5134-4581-8d6d-3130116f1405" />
     </platform>
     <name>AB POLICY</name>
     <description>SKS Hospital India Pvt.Ltd</description>
