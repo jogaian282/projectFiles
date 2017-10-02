@@ -21,7 +21,7 @@ export class SettingsPage   {
     }
     
     // Method to check update
-    private chkUpdate(){
+    public chkUpdate(){
         this.platform.ready().then(
             () =>{
                 this.codePush.sync({}, (progress) => {
@@ -47,7 +47,7 @@ export class SettingsPage   {
     }
 
     // Method to check about
-    private about(val){
+    public about(val){
         const alert = this.alertCtrl.create({
             title: 'About',
             message: `
