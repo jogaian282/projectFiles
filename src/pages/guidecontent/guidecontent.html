@@ -1,0 +1,179 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Antimicrobials Guidelines</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content no-bounce>
+    <ion-list>
+        <ion-item tappable (click)="guideLineContent1()">
+            Initiating Colistin
+        </ion-item>
+        <ion-item tappable (click)="guideLineContent2()">
+            To protect the Carbapenems and Linezolid from overuse
+        </ion-item>
+        <ion-item tappable (click)="guideLineContent3()">
+            De-escalation / Escalation
+        </ion-item>
+        <ion-item tappable (click)="guideLineContent4()">
+            Indications for Carbapenem use
+        </ion-item>
+        <ion-item tappable (click)="guideLineContent5()">
+            Reference
+        </ion-item>
+    </ion-list>
+
+    <br>
+    
+    <ion-card #guideline1 padding-top>
+        <ion-card-header color="primary" text-wrap>
+            The following criteria has been proposed for initiating Colistin
+        </ion-card-header>
+        <ion-card-content>
+            <ul [ngStyle]="{'list-style-type': 'none', 'padding-left': '0px'}">
+                <li text-wrap>
+                    1. Pan-resistant organism as per culture report with evidence of invasive disease-fever/leuococytosis/ elevated Procalcitonin (PCT) or culture from a sterile site
+                </li>
+                <br>
+                <li>2. Clinical failure of all other classes of antibiotics over 72 hours
+                </li><br>
+                <li>
+                    3. Colistin to be given with loading does in combination with beta lactum class of antibiotics
+                </li>
+            </ul>
+            <ion-buttons end>
+                <button ion-button icon-end color="danger" clear (click)="scrollToTop()">
+                    Scroll To Top
+                    <ion-icon name="arrow-round-up">
+
+                    </ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card #guideline2 padding-top>
+        <ion-card-header color="primary" text-wrap>
+            The following criteria has been proposed to protect the Carbapenems and Linezolid from overuse
+        </ion-card-header>
+        <ion-card-content>
+            <ul [ngStyle]="{'list-style-type': 'none', 'padding-left': '0px'}">
+                <li>
+                    1.Severe sepsis as defined by more than one organ failure of new onset and / or elevated serum lactate
+                </li>
+                <br>
+                <li>2.Clinical failure of other classes of antibiotics over 48 hours in terms of worsening inflammatory markers, unresolving fever and new / worsening hemodynamic instability
+                </li><br>
+                <li>
+                    3.Underlying severe immuno - supperssion - Neutropenea, immuno-suppressive therapy,Diabetic ketoacidosis (DKA) etc
+                </li><br>
+                <li> 4.The organism is susceptible to only carbapenems/linezolid,as per culture report
+                </li>
+            </ul>
+            <ion-buttons end>
+                <button ion-button icon-end color="danger" clear (click)="scrollToTop()">
+                    Scroll To Top
+                    <ion-icon name="arrow-round-up">
+
+                    </ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card #guideline3 padding-top>
+        <ion-card-header color="primary" text-wrap>
+            Some guiding principles for de-escalation/Escalation:
+        </ion-card-header>
+        <ion-card-content>
+            <ul [ngStyle]="{'list-style-type': 'none', 'padding-left': '0px'}">
+                <li text-justify>
+                    1.If ESBL +ve:drug choice is monotheraphy with carbepenems. Preferably choose group I carbepenem. Piperacillin-Tazobactum and Cefoperazone-Sulbactum can be used if in-vitro sensitive and for mild infections
+                </li>
+                <br>
+                <li>2.Vancomycin should be used only for confirmed MRSA infections and not in MSSA infections
+                </li><br>
+                <li>
+                    3.In case of Pan drug resistant Pseudomonas / Acinetobacter spp. Combination therapy uisng colistin along with beta-lactams (using PK/PD principles)should be discussed with microbiologist /physician
+                </li>
+            </ul>
+            <ion-buttons end>
+                <button ion-button icon-end color="danger" clear (click)="scrollToTop()">
+                    Scroll To Top
+                    <ion-icon name="arrow-round-up">
+
+                    </ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card #guideline4 padding-top>
+        <ion-card-header color="primary" text-wrap>
+            Indications for Carbapenem use:
+        </ion-card-header>
+        <ion-card-content>
+                <ul [ngStyle]="{'list-style-type': 'none', 'padding-left': '0px'}">
+                    <li text-wrap>
+                        1. Infections (e.g., bacteremia, pyelonephritis, intra-abdominal infections , peritonitis, cholangitis, abscesses), nosocomia Pnneumonia etc.) confirmed (by appropriate culture and susceptibility studies) to be caused by Gram-negative bacteria (E coli,
+                        Klebsiella spp., Enterobacter spp.,Pseudomonas aeruginosa, other non-fermenting Gram-negative bacilli) resistant to other classes of antimicrobials and susceptible only to carbapenems in-vitro
+                    </li>
+                    <br>
+                    <li>2. Initial empiric treatment for severe, life-threatening infections (associated with multi-organ dysfunction, septic shock) caused by Gram-negative bacteria.
+                    </li><br>
+                    <li>
+                        *Febrile neutropenia
+                    </li><br>
+                    <li>*ventilator associated / nosocomial pneumonia
+                    </li>
+                    <br>
+                    <li>
+                        *Pyelonephritis / complicated urinary tract infections
+                    </li><br>
+                    <li>*Complicated intra - abdominal infections
+                    </li>
+                    <br>
+                    <li>
+                        Once the culture and susceptibility reports are available,choose the most appropriate antibiotic based on spectrum of activity, toxicity and cost (de-escalation)
+                    </li>
+                </ul>
+            <ion-buttons end>
+                <button ion-button icon-end color="danger" clear (click)="scrollToTop()">
+                    Scroll To Top
+                    <ion-icon name="arrow-round-up">
+
+                    </ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card #guideline5 padding-top>
+        <ion-card-header color="primary" text-wrap>
+            Reference:
+        </ion-card-header>
+        <ion-card-content>
+            <ol [ngStyle]="{'list-style-type': 'none', 'padding-left': '0px'}">
+                <li text-justify>
+                    National Treatment Guidelines for Antimicrobial.
+                </li>
+                <br>
+                <li>Ministry in infectious Diseases (2016).
+                </li><br>
+                <li>
+                    Ministry of Health & Family Welfare Government of india.
+                </li>
+            </ol>
+            <ion-buttons end>
+                <button ion-button icon-end color="danger" clear (click)="scrollToTop()">
+                    Scroll To Top
+                    <ion-icon name="arrow-round-up">
+
+                    </ion-icon>
+                </button>
+            </ion-buttons>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

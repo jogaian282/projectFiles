@@ -1,0 +1,48 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>Dosages</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <!--Begin Search Bar -->
+    <ion-searchbar [animated]=true [(ngModel)]="term" (ionInput)="searchFn($event)" (ionClear)="onClear($event)" [showCancelButton]=false>
+    </ion-searchbar>
+    <!-- End Search Bar -->
+
+    <!-- Begin Dosage Lists -->
+    <ion-list *ngIf="!isSearched">
+        <ion-item *ngFor="let searchLists of keyValueDosage | search:term" (click)="itemSelected(searchLists)" tappable>
+            {{ searchLists }}
+        </ion-item>
+    </ion-list>
+    <div *ngIf="isSearched">
+        <div *ngFor="let searchLists of keyValueDosage">
+            <div *ngFor="let item of currentDosage[searchLists] | search:term">
+                <p *ngIf="item?.stdDose||item?.highDose" [ngStyle]="{'margin-left': '12px','font-size':'1.1em'}">
+                    <a (click)="itemSelected(searchLists)" tappable>{{ searchLists }}</a>
+                </p>
+                <ion-card *ngIf="item?.stdDose||item?.highDose">
+                    <ion-card-content justify-content-start>
+                        <h3 ion-text padding-vertical>{{item.name}}</h3>
+                        <p *ngIf="item?.stdDose">
+                            <b><small ion-text color="primary">Std Dose : </small></b>
+                            <b><span text-wrap>{{item.stdDose}}</span></b>
+                        </p>
+                        <br>
+                        <p *ngIf="item?.highDose">
+                            <b><small ion-text color="danger">High Dose : </small></b>
+                            <b><span text-wrap>{{item.highDose}}</span></b>
+                        </p>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+        </div>
+    </div>
+    <!-- End Dosage Lists -->
+    
+</ion-content>

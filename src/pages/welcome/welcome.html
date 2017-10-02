@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-navbar color="light">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6>
+                    <img src="assets/images/logo.png" width="99%" alt="app_logo"/>
+                </ion-col>
+                <ion-col col-6 text-right>
+                    <span ion-text color="primary" [ngStyle]="{'display': 'inline-block', 'margin-top': '5px'}"><b>For Adults (2017)</b></span>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+
+    <ion-list>
+        <ion-item (click)="patientrisk()" tappable>
+            Patient Risk Stratification
+        </ion-item>
+        <ion-item (click)="riskfactor()" tappable>
+            Risk Factors
+        </ion-item>
+        <ion-item (click)="goToOtherPage()" tappable>
+            OPD Antibiotic Policy
+        </ion-item>
+        <ion-item (click)="opdward()" tappable>
+            Ward/ICU Local Guidelines
+        </ion-item>
+        <ion-item (click)="ward()" tappable>
+            Antimicrobials Guidelines
+        </ion-item>
+        <ion-item (click)="dosage()" tappable>
+            Dosages
+        </ion-item>
+        <ion-item (click)="note()" tappable>
+            Note
+        </ion-item>
+        <ion-item (click)="disclaimer()" tappable>
+            Disclaimer
+        </ion-item>
+    </ion-list>
+
+</ion-content>

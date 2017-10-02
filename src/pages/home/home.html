@@ -1,0 +1,34 @@
+<ion-header text-wrap>
+    <ion-navbar color="primary">
+        <ion-title ion-text color="Dosages">
+            {{ selectedDosage}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- Begin Search Bar -->
+    <ion-searchbar [showCancelButton]="shouldShowCancel" [(ngModel)]="term" (ionInput)="searchFn($event)">
+    </ion-searchbar>
+    <!-- End Search Bar -->
+
+    <!-- Begin Dosage Lists Searched Items -->
+    <div *ngFor="let item of dosageName | search:term">
+        <ion-card *ngIf="item?.stdDose||item?.highDose">
+            <ion-card-content justify-content-start>
+                <h3 ion-text padding-vertical>{{item.name}}</h3>
+                <p *ngIf="item?.stdDose">
+                    <b><small ion-text color="primary">Std Dose : </small></b>
+                    <b><span text-wrap>{{item.stdDose}}</span></b>
+                </p>
+                <br>
+                <p *ngIf="item?.highDose">
+                    <b><small ion-text color="danger">High Dose : </small></b>
+                    <b><span text-wrap>{{item.highDose}}</span></b>
+                </p>
+            </ion-card-content>
+        </ion-card>
+    </div>
+    <!-- End Dosage Lists Searched Items -->
+</ion-content>

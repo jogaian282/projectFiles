@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Patient Risk Stratification</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="light" clear (click)="showAlertMessage()" small>
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content no-bounce>
+    <super-tabs (tabSelect)="onTabSelect($event)" scrollTabs toolbarBackground="light" indicatorColor="primary" toolbarColor="dark">
+        <super-tab [root]="page1" title="Health care contact"></super-tab>
+        <super-tab [root]="page2" title="Antibiotic usage"></super-tab>
+        <super-tab [root]="page3" title="Co-morbidity and patient age"></super-tab>
+    </super-tabs>
+</ion-content>

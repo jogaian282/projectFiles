@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Ward/ICU Local Guidelines</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+    <super-tabs (tabSelect)="onTabSelect($event)" scrollTabs toolbarBackground="light" indicatorColor="primary" toolbarColor="dark">
+        <super-tab [root]="page1" title="Respiratory Infection"></super-tab>
+        <super-tab [root]="page2" title="Soft Tissue Infection"></super-tab>
+        <super-tab [root]="page3" title="Urinary Tract Infection"></super-tab>
+        <super-tab [root]="page4" title="Blood Stream Infection"></super-tab>
+    </super-tabs>
+</ion-content>

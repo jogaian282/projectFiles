@@ -1,0 +1,407 @@
+{
+    "Penicillins": [{
+            "name": "Benzylpenicillin",
+            "stdDose": "600 mg x 4 iv",
+            "highDose": "2.4 g x 6 iv"
+        },
+        {
+            "name": "Ampicillin",
+            "stdDose": "500 mg - 1 g x 3 - 4 iv",
+            "highDose": "1 - 2 g x 4 - 6 iv"
+        },
+        {
+            "name": "Ampicillin-sulbactum",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Amoxicillin",
+            "stdDose": "500 mg x 3 iv (Oral Dosage under Discussion)",
+            "highDose": "2 g x 6 iv (Oral Dosage under Discussion)"
+        },
+        {
+            "name": "Amoxicillin-clavulanic acid",
+            "stdDose": "500 mg x 3 iv (Oral Dosage under Discussion)",
+            "highDose": "2 g x 6 iv (Oral Dosage under Discussion)"
+        },
+        {
+            "name": "Piperacillin",
+            "stdDose": "4 g x 3 iv",
+            "highDose": "4 g x 4 iv"
+        },
+        {
+            "name": "Piperacillin-tazobactum",
+            "stdDose": "4 g x 3 iv",
+            "highDose": "4 g x 4 iv"
+        },
+        {
+            "name": "Ticarcillin",
+            "stdDose": "3 g x 4 iv",
+            "highDose": "3 g x 6 iv"
+        },
+        {
+            "name": "Ticarcillin-clavulanic acid",
+            "stdDose": "3 g x 4 iv",
+            "highDose": "3 g x 6 iv"
+        },
+        {
+            "name": "Phenoxymethylpenicillin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Oxacillin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Cloxacillin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Dicloxacillin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Flucloxacillin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Mecillinam",
+            "stdDose": "200 - 400 mg x 3 oral",
+            "highDose": "None"
+        }
+    ],
+
+    "Cephalosporins": [{
+            "name": "Cefaclor",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Cefadroxil",
+            "stdDose": "500 mg x 2 (oral)",
+            "highDose": "1 g x 2 (oral)"
+        },
+        {
+            "name": "Cefalexin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Cefazolin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Cefepime",
+            "stdDose": "2 g x 2 iv",
+            "highDose": "3 g x 6 iv"
+        },
+        {
+            "name": "Cefixime",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Cefotaxime",
+            "stdDose": "1 g x 3 iv",
+            "highDose": "2 g x 3 iv"
+        },
+        {
+            "name": "Cefoxitin",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Cefpodoxime",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Ceftaroline",
+            "stdDose": "600 mg x 2 iv (over 1 hour)",
+            "highDose": "None"
+        },
+        {
+            "name": "Ceftazidime",
+            "stdDose": "1 g x 3 iv",
+            "highDose": "2 g x 3 iv"
+        },
+        {
+            "name": "Ceftibuten",
+            "stdDose": "400 mg x 1 (oral)",
+            "highDose": "None"
+        },
+        {
+            "name": "Ceftobiprole",
+            "stdDose": "500 mg x 3 iv (over 2 hours)",
+            "highDose": "None"
+        },
+        {
+            "name": "Ceftoiozane-tazobactam",
+            "stdDose": "1 g x 3 iv (over 1 hour)",
+            "highDose": "None"
+        },
+        {
+            "name": "Ceftriazone",
+            "stdDose": "1 g x 1 iv",
+            "highDose": "2 g x 1 iv"
+        },
+        {
+            "name": "Cefuroxime iv",
+            "stdDose": "750 mg x 3 iv",
+            "highDose": "1.5 g x 3 iv"
+        },
+        {
+            "name": "Cefuroxime (oral)",
+            "stdDose": null,
+            "highDose": null
+        }
+    ],
+
+    "Carbapenems":[
+        {
+            "name": "Doripenem",
+            "stdDose": "500 mg x 3 iv over 1 hour",
+            "highDose": "1 g x 3 iv over 4 hours"
+        },
+        {
+            "name": "Ertapenem",
+            "stdDose": "1 g x 1 iv over 30 minutes",
+            "highDose": "None"
+        },
+        {
+            "name": "Imipenem",
+            "stdDose": "500 mg x 4 iv over 30 minutes",
+            "highDose": "1 g x 4 iv over 30 minutes"
+        },
+        {
+            "name": "Meropenem",
+            "stdDose": "1 g x 3 iv over 30 minutes",
+            "highDose": "2 g x 3 iv over 30 minutes"
+        }
+    ],
+    "Monobactams":[
+        {
+            "name": "Aztreonam",
+            "stdDose": "1 g x 3 iv ",
+            "highDose": "2 g x 4 iv "
+        }
+    ],
+    "Fluoroquinolones":[
+        {
+            "name": "Ciprofloxacin",
+            "stdDose": "500 mg x 2 oral or 400 mg x 2 iv",
+            "highDose": "750 mg x 2 oral or 500 mg x 3 iv"
+        },
+        {
+            "name": "Levofloxacin",
+            "stdDose": "500 mg x 1 oral or 500 mg x 1 iv",
+            "highDose": "500 mg x 2 oral or 500 mg x 2 iv"
+        },
+        {
+            "name": "Moxifloxacin",
+            "stdDose": "400 mg x 1 oral or 400 mg x 1 iv",
+            "highDose": "None"
+        },
+        {
+            "name": "Nalidixic acid",
+            "stdDose": null,
+            "highDose": null
+        },
+        {
+            "name": "Norfloxacin",
+            "stdDose": "400 mg x 2 oral",
+            "highDose": "None"
+        },
+        {
+            "name": "Ofloxacin",
+            "stdDose": "200 mg x 2 oral or 200 mg x 2 iv",
+            "highDose": "400 mg x 2 oral or 400 mg x 2 iv"
+        }
+
+    ],
+    "Aminoglycosides":[
+        {
+            "name": "Amikacin",
+            "stdDose": "20 mg/kg x 1 iv ",
+            "highDose": "25 mg/kg x 1 iv "
+        },
+        {
+            "name": "Gentamicin",
+            "stdDose": "5 mg/kg x 1 iv ",
+            "highDose": "7 mg/kg x 1 iv "
+        },
+        {
+            "name": "Netilmicin",
+            "stdDose": "5 mg/kg x 1 iv ",
+            "highDose": "7 mg/kg x 1 iv "
+        },
+        {
+            "name": "Tobramycin",
+            "stdDose": "5 mg/kg x 1 iv ",
+            "highDose": "7 mg/kg x 1 iv "
+        }
+    ],
+    "Glycopeptides and lipoglycopeptides":[
+        {
+            "name": "Dalbavancin",
+            "stdDose": "1 g x 1 iv over 30 minutes on day 1 If needed, 500 mg x 1 iv over 30 minutes on day 8",
+            "highDose": "None"
+        },
+        {
+            "name": "Oritavancin",
+            "stdDose": "1.2 g x 1 (single dose)iv over 3 h",
+            "highDose": "None"
+        },
+        {
+            "name": "Teicoplanin",
+            "stdDose": "400 mg x 1 iv ",
+            "highDose": "800 mg x 1 iv or 400 mg x 2 iv"
+        },
+        {
+            "name": "Telavancin",
+            "stdDose": "10 mg/kg x 1 iv over 1 h",
+            "highDose": "None"
+        },
+        {
+            "name": "Vancomycin",
+            "stdDose": "500 mg x 4 iv or 1 g x 2 iv or 2 g x 1 by continuous infusion",
+            "highDose": "None"
+        }
+    ],
+    "Macrolides,lincosamides and streptogramins":[
+        {
+            "name": "Azithromycin",
+            "stdDose": "500 mg x 1 oral or 500 mg x 1 iv",
+            "highDose": "None"
+        },
+        {
+            "name": "Clarithromycin",
+            "stdDose": "250 mg x 2 oral",
+            "highDose": "500 mg x 2 oral"
+        },
+        {
+            "name": "Erythromycin",
+            "stdDose": "500 mg x 2 - 4 oral or 500 mg x 2 - 4 iv",
+            "highDose": "1 g x 4 oral or 1 g x 4 iv"
+        },
+        {
+            "name": "Roxithromycin",
+            "stdDose": "150 mg x 2 oral",
+            "highDose": "None"
+        },
+        {
+            "name": "Telithromycin",
+            "stdDose": "800 mg x 1 oral",
+            "highDose": "None"
+        },
+        {
+            "name": "Clindamycin",
+            "stdDose": "300 mg x 2 oral or 600 mg x 3 iv",
+            "highDose": "300 mg x 4 oral or 1200 mg x 2 iv"
+        },
+        {
+            "name": "Quinupristin-dalfopristin",
+            "stdDose": null,
+            "highDose": null
+        }
+    ],
+    "Tetracyclines":[
+        {
+            "name": "Doxycycline",
+            "stdDose": "100 mg x 1 oral",
+            "highDose": "200 mg x 1 oral"
+        },
+        {
+            "name": "Minocycline",
+            "stdDose": "100 mg x 2 oral",
+            "highDose": "None"
+        },
+        {
+            "name": "Tetracycline",
+            "stdDose": "250 mg x 4 oral",
+            "highDose": "500 mg x 4 oral"
+        },
+        {
+            "name": "Tigecycline",
+            "stdDose": "100 mg loading dose followed by 50 mg x 2 iv",
+            "highDose": "None"
+        }
+    ],
+    "Oxazolidinones":[
+        {
+            "name": "Linezolid",
+            "stdDose": "600 mg x 2 oral or 600 mg x 2 iv",
+            "highDose": "None"
+        },
+        {
+            "name": "Tedizolid",
+            "stdDose": "200 mg x 1 oral",
+            "highDose": "None"
+        }
+    ],
+    "Miscellaneous agents":[
+        {
+            "name": "Chloramphenicol",
+            "stdDose": "1 g x 4 oral or 1 g x 4 iv",
+            "highDose": "2 g x 4 oral or 2 g x 4 iv"
+        },  {
+            "name": "Colistin",
+            "stdDose": "3 MU x 3 iv with a loading dose of 9 MU",
+            "highDose": "None"
+        },  {
+            "name": "Daptomycin",
+            "stdDose": "250 mg x 1 iv",
+            "highDose": "500 mg x 1 iv"
+        },  {
+            "name": "Fasfomycin iv",
+            "stdDose": "4 g x 3 iv or 8 g x 3 iv",
+            "highDose": "None"
+        },  {
+            "name": "Fasfomycin oral",
+            "stdDose": "3 g x 1 oral as a single dose",
+            "highDose": "None"
+        },  {
+            "name": "Fusidic acid",
+            "stdDose": "500 mg x 2 oral or 500 mg x 2 iv",
+            "highDose": "500 mg x 3 oral or 500 mg x 3 iv"
+        },  {
+            "name": "Metronidazole",
+            "stdDose": "400 mg x 3 oral or 400 mg x 3 iv",
+            "highDose": "500 mg x 3 oral or 500 mg x 3 iv"
+        },
+        {
+            "name": "Mupirocin",
+            "stdDose": "For topical treatment only",
+            "highDose": null
+        }, {
+            "name": "Nitrofurantoin",
+            "stdDose": "50 mg x 3 oral",
+            "highDose": "100 mg x 4 oral"
+        },
+        {
+            "name": "Rifampicin",
+            "stdDose": "600 mg x 1 oral or 600 mg x 1 iv",
+            "highDose": "600 mg x 2 oral or 600 mg x 2 iv"
+        },
+        {
+            "name": "Spectinomycin",
+            "stdDose": "2 g x 1 im",
+            "highDose": "None"
+        }, {
+            "name": "Trimethoprim",
+            "stdDose": "160 mg x 2 oral",
+            "highDose": "None"
+        },{
+            "name": "Trimethoprim - sulfamethoxazole",
+            "stdDose": "(160 mg trimethoprim + 800 mg sulfa) x 2 oral or (160 mg trimethoprim + 800 mg sulfa) x 2 iv",
+            "highDose": "(240 mg trimethoprim + 1.2 g sulfa) x 2 oral or (240 mg trimethoprim + 1.2 g sulfa) x 2 iv"
+        }
+    ]
+
+}
