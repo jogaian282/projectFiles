@@ -49,7 +49,7 @@ export class SettingsPage   {
     // Method to check about
     public about(val){
         const alert = this.alertCtrl.create({
-            title: 'About Antibioic Policy',
+            title: 'About Antibiotic Policy',
             message: `
                 <div> Version v0.0.1 </div><br>
                 <div> Developed by </div><br>
