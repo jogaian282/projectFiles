@@ -1,5 +1,6 @@
 ﻿import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,PopoverController} from 'ionic-angular';
+import { IonicPage, NavController, NavParams,PopoverController,Platform} from 'ionic-angular';
+import { CodePush } from '@ionic-native/code-push';
 
 @IonicPage()
 @Component({
@@ -9,7 +10,10 @@ import { IonicPage, NavController, NavParams,PopoverController} from 'ionic-angu
 
 export class WelcomePage   {
 
-	constructor(public navCtrl: NavController, public navParams: NavParams,public popoverCtrl: PopoverController) {
+	constructor(public navCtrl: NavController, public navParams: NavParams,private codePush: CodePush,public popoverCtrl: PopoverController,public platform:Platform) {
+		this.platform.ready().then(() =>{
+			this.codePush.notifyApplicationReady();
+		});
 	}
 
 	ionViewDidLoad() {

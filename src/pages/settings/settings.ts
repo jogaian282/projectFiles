@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform, AlertController,ViewController} from 'ionic-angular';
-import { CodePush,SyncStatus } from '@ionic-native/code-push';
+import { CodePush, SyncStatus, InstallMode } from '@ionic-native/code-push';
 
 @IonicPage()
 @Component({
@@ -24,7 +24,7 @@ export class SettingsPage   {
     public chkUpdate(val){
         this.platform.ready().then(
             () =>{
-                this.codePush.sync().subscribe((status) => {
+                this.codePush.sync({updateDialog: true,installMode: InstallMode.ON_NEXT_RESUME}).subscribe((status) => {
                     if(status == SyncStatus.CHECKING_FOR_UPDATE)
                         alert("Checking for update");
                     if(status == SyncStatus.DOWNLOADING_PACKAGE)
@@ -35,10 +35,14 @@ export class SettingsPage   {
                         alert("Installing Update");
                     if(status == SyncStatus.UP_TO_DATE)
                         alert("Up to Date");
-                    if(status == SyncStatus.UPDATE_INSTALLED)
+                    if(status == SyncStatus.UPDATE_INSTALLED){
                         alert("Update Installed");
+                        if(SyncStatus.UPDATE_INSTALLED){
+                            this.codePush.restartApplication();
+                        }
+                    }
                     if(status == SyncStatus.ERROR)
-                        alert("Error Occurred While Downloading");
+                        alert("Error -> Check Internet Connection");
                 })
                 this.selectedTitle = val.target.textContent;
                 this.viewCtrl.dismiss(this.selectedTitle);
