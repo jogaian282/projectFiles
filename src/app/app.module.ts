@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { DosageProvider } from '../providers/dosage/dosage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Dialogs } from '@ionic-native/dialogs';
 import { CodePush } from '@ionic-native/code-push';
 
 
@@ -27,6 +28,7 @@ import { CodePush } from '@ionic-native/code-push';
   providers: [
     StatusBar,
     SplashScreen,
+    Dialogs,
     CodePush,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DosageProvider
